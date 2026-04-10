@@ -1,0 +1,63 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# ── Environments ──────────────────────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+.conda/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Output files ──────────────────────────────────────────────────────────────
+outputs/figures/*.png
+outputs/figures/*.svg
+outputs/tables/*.csv
+outputs/tables/*.txt
+
+# ── Large EEG / derivative files (never commit raw data) ──────────────────────
+*.fif
+*.set
+*.edf
+*.bdf
+*.raw
+
+# Derivative CSVs that are too large for git (>5 MB)
+# (Keep small summary CSVs, exclude trial-level files)
+derivatives/dds_peak_aligned_n450/
+derivatives/ais_n450_*/
+derivatives/te_n450_*/
+derivatives/trial_roi_timeseries*/
+derivatives/results_n450_clinical/n450_master_clinical_results*.csv
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+*.log
+*.tmp
+.pytest_cache/
+.coverage
+htmlcov/
