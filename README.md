@@ -1,3 +1,47 @@
+> ⚠️ **ESTE ANÁLISIS ESTÁ RETIRADO Y ARCHIVADO (2026-08-18). NO REANUDAR.**
+> La línea DDS-residual/AIS/TE no aporta validez incremental. Ver [CLOSURE_REPORT.md](CLOSURE_REPORT.md) y [STATUS.md](STATUS.md).
+>
+> El contenido que sigue describe el pipeline tal como estaba antes del cierre y se conserva por
+> trazabilidad. **Las cifras que menciona corresponden a derivados defectuosos** (hoy `*_BUGGED`);
+> los números correctos están en `outputs/forensic/`.
+
+---
+
+## Data Availability
+
+The EEG dataset analyzed in this repository originates from a previously
+published study:
+
+> Jan, D., Lopez-Pigui, J., Padron, I., & de Vega, M. (2024). Semantic
+> inhibition impairment in college students with depressive states as
+> evidenced by EEG and pupillometry during the Hayling task.
+> *Scientific Reports*, 14(1), Article 24089.
+> https://doi.org/10.1038/s41598-024-75511-0
+
+The original data and collection scripts are publicly available via the
+Open Science Framework (OSF):
+
+| Resource | Link |
+|----------|------|
+| PsychoPy Hayling task | https://drive.google.com/file/d/1gu-0J2pu_f1-zRHTtU420wkhUY-rxD0p5/view |
+| MNE-Python preprocessing scripts | https://drive.google.com/drive/folders/1S2tUSGVAKQtD9cb_RYIA-PuHeNeANMbX |
+
+### What this repository contains
+
+This repository does **not** redistribute the raw EEG recordings.
+It contains:
+- All analysis scripts to reproduce the results of the present paper
+- Preprocessed derivative CSVs (DDS fits, AIS, TE results) read from
+  `../DDS-Hayling/derivatives/` — see `data/README.md` for path setup
+
+### Reproducing from scratch
+
+To reproduce from the raw EEG data:
+1. Download the original dataset from the OSF links above
+2. Run the MNE-Python preprocessing scripts from Jan et al. (2024)
+3. Run the DDS fitting and information-theoretic pipeline from the
+   present repository: `python pipeline/run_all.py`
+
 # DDS-Hayling Paper Pipeline
 
 Fully reproducible analysis pipeline for:

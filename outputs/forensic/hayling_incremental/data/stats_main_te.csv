@@ -1,0 +1,2 @@
+direction,lag,n,mean_init,sem_init,mean_inhib,sem_inhib,t,p_raw,d
+frontal→cACC,1,47,1.1812,0.0113,1.1692,0.0136,1.6223,0.11157,0.237

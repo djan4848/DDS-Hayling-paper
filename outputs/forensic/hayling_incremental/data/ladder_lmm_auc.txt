@@ -1,0 +1,62 @@
+/home/neuraldyn/.local/lib/python3.10/site-packages/statsmodels/regression/mixed_linear_model.py:2238: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
+  warnings.warn(msg, ConvergenceWarning)
+/home/neuraldyn/.local/lib/python3.10/site-packages/statsmodels/regression/mixed_linear_model.py:2262: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
+  warnings.warn(msg, ConvergenceWarning)
+/home/neuraldyn/.local/lib/python3.10/site-packages/statsmodels/regression/mixed_linear_model.py:2238: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
+  warnings.warn(msg, ConvergenceWarning)
+/home/neuraldyn/.local/lib/python3.10/site-packages/statsmodels/regression/mixed_linear_model.py:2262: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
+  warnings.warn(msg, ConvergenceWarning)
+/home/neuraldyn/.local/lib/python3.10/site-packages/statsmodels/regression/mixed_linear_model.py:2238: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
+  warnings.warn(msg, ConvergenceWarning)
+/home/neuraldyn/.local/lib/python3.10/site-packages/statsmodels/regression/mixed_linear_model.py:2238: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
+  warnings.warn(msg, ConvergenceWarning)
+/home/neuraldyn/.local/lib/python3.10/site-packages/statsmodels/regression/mixed_linear_model.py:2262: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
+  warnings.warn(msg, ConvergenceWarning)
+n sujetos escalera: 47
+                                   model     dz  dz_lo  dz_hi  p_perm                                                    beta_cov
+                       M0  AIS_resid ~ 1 0.3912 0.1153 0.7112  0.0095                                                          {}
+                    M-i  + amplitud N450 0.4073 0.1294 0.7246  0.0073                                     {'amp_n450': 9108.0884}
+        M-ii + exponente 1/f (specparam) 0.4710 0.1532 0.9051  0.0026                                          {'chi_sp': 0.1488}
+       M-ii' + exponente 1/f (OLS trial) 0.6752 0.1852 1.3012  0.0001                                         {'chi_ols': 0.2612}
+                       M-iii + AIS crudo 0.5999 0.1894 1.0552  0.0003                                         {'ais_raw': 0.6054}
+          M-full + amp + 1/f + AIS crudo 0.6378 0.2198 1.2984  0.0001 {'amp_n450': -693.972, 'chi_sp': 0.0749, 'ais_raw': 0.5099}
+                    M-R2 + R2 del ajuste 0.4300 0.1463 0.7839  0.0053                                              {'r2': 0.4916}
+                   REC amplitud N450 ~ 1 0.3583 0.0540 0.7018  0.0178                                                          {}
+       REC amplitud N450 ~ 1 + AIS_resid 0.3731 0.0700 0.7566  0.0155                                          {'ais_resid': 0.0}
+                   REC exponente 1/f ~ 1 0.4054 0.1273 0.7057  0.0079                                                          {}
+       REC exponente 1/f ~ 1 + AIS_resid 0.4882 0.1580 0.9631  0.0017                                       {'ais_resid': 2.1869}
+                       REC AIS crudo ~ 1 0.3653 0.0860 0.6725  0.0200                                                          {}
+           REC AIS crudo ~ 1 + AIS_resid 0.5603 0.1212 1.0493  0.0006                                       {'ais_resid': 0.9649}
+             REC amplitud en el pico ~ 1 0.3291 0.0430 0.6770  0.0292                                                          {}
+ REC amplitud en el pico ~ 1 + AIS_resid 0.3449 0.0499 0.7632  0.0238                                          {'ais_resid': 0.0}
+            REC varianza del residuo ~ 1 0.6338 0.4361 0.8735  0.0001                                                          {}
+REC varianza del residuo ~ 1 + AIS_resid 0.7908 0.5384 1.1689  0.0001                                          {'ais_resid': 0.0}
+[LMM trial] cond solo      beta_cond=+0.03324  p=9.983e-06
+[LMM trial] + amplitud     beta_cond=+0.03695  p=1.09e-06
+[LMM trial] + 1/f (OLS)    beta_cond=+0.01126  p=0.0428
+[LMM trial] + AIS crudo    beta_cond=+0.01253  p=0.05653
+[LMM trial] + todo         beta_cond=+0.00531  p=0.3064
+
+[AUC] pooled within-subject z : 0.5322  p_perm=0.0004  (nulo 0.5003)
+[AUC] LOSO                    : 0.5075  IC95 [0.4742, 0.5392]
+[SUJETO] fraccion con INIT>INHIB: 0.660  (binomial p=0.0400)
+
+=== VARIABILIDAD TRIAL-A-TRIAL (exploratorio) ===
+    roi                      measure  n      dz  p_perm  q_bh_exploratorio
+frontal SD entre trials de ais_resid 43  0.5305  0.0011             0.0176
+frontal SD entre trials de resid_var 43  0.0804  0.6119             0.8620
+frontal     SD entre trials de absA1 43  0.4262  0.0035             0.0187
+frontal    SD entre trials de gamma1 43  0.2328  0.1347             0.5387
+frontal        SD entre trials de f1 43  0.0923  0.5501             0.8620
+frontal     SD entre trials de absA2 43  0.4243  0.0026             0.0187
+frontal    SD entre trials de gamma2 43  0.0288  0.8545             0.8620
+frontal        SD entre trials de f2 43 -0.1331  0.4021             0.8051
+   cacc SD entre trials de ais_resid 43 -0.0584  0.7015             0.8620
+   cacc SD entre trials de resid_var 43  0.1822  0.2447             0.6525
+   cacc     SD entre trials de absA1 43 -0.1331  0.4529             0.8051
+   cacc    SD entre trials de gamma1 43  0.0642  0.6926             0.8620
+   cacc        SD entre trials de f1 43  0.1917  0.2182             0.6525
+   cacc     SD entre trials de absA2 43 -0.1358  0.4412             0.8051
+   cacc    SD entre trials de gamma2 43 -0.0307  0.8431             0.8620
+   cacc        SD entre trials de f2 43  0.0291  0.8620             0.8620
+LADDER_DONE

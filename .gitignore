@@ -61,3 +61,10 @@ desktop.ini
 .pytest_cache/
 .coverage
 htmlcov/
+
+# ── Evidencia forense: agregados SÍ, nivel de trial NO ────────────────────────
+# (cierre 2026-08-18; ver outputs/forensic/*/data/_LOCAL_ONLY.md)
+outputs/forensic/hayling_battery/data/unit_battery.csv
+outputs/forensic/hayling_battery/data/unit_te.csv
+outputs/forensic/hayling_battery/data/keys.csv
+outputs/forensic/hayling_incremental/data/fix_verify.csv
